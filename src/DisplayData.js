@@ -3,9 +3,10 @@ function DisplayData({ inputData }) {
     <div>
       {inputData.map((data, index) => {
         return (
-          <li key={index}>
-            {data["recipe-name"]} {data["recipe-instructions"]}
-          </li>
+          <ul key={index}>
+            <li>{data["recipe-name"]}</li>
+            {/* {data["recipe-instructions"]} */}
+          </ul>
         );
       })}
     </div>
