@@ -1,21 +1,17 @@
 function Form({ handleChange, formInputData, handleSubmit }) {
   return (
-    <div>
+    <form>
       <div>
         <input
-          type="textbox"
           onChange={handleChange}
-          value={formInputData.recipeName}
-          name="recipeName"
+          name="recipe-name"
           placeholder="recipe-name"
         />
       </div>
       <div>
         <input
-          type="textbox"
           onChange={handleChange}
-          value={formInputData.recipeInstructions}
-          name="recipeInstructions"
+          name="recipe-instructions"
           placeholder="recipe-instructions"
         />
       </div>
@@ -24,7 +20,7 @@ function Form({ handleChange, formInputData, handleSubmit }) {
           Add
         </button>
       </div>
-    </div>
+    </form>
   );
 }
 export default Form;

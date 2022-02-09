@@ -4,7 +4,7 @@ function DisplayData({ inputData }) {
       {inputData.map((data, index) => {
         return (
           <li key={index}>
-            {data.recipeName} {data.recipeInstructions}
+            {data["recipe-name"]} {data["recipe-instructions"]}
           </li>
         );
       })}
