@@ -4,9 +4,10 @@ function Form({ handleChange, formInputData, handleSubmit }) {
       <div>
         <label>recipe-name </label>
         <input
+          name="recipe-name"
+          value={formInputData["recipe-name"]}
           type="text"
           onChange={handleChange}
-          name="recipe-name"
           placeholder="recipe-name"
         />
       </div>
@@ -15,6 +16,7 @@ function Form({ handleChange, formInputData, handleSubmit }) {
         <input
           type="text"
           onChange={handleChange}
+          value={formInputData["recipe-instructions"]}
           name="recipe-instructions"
           placeholder="recipe-instructions"
         />
