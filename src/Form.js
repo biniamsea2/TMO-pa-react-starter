@@ -4,14 +4,16 @@ function Form({ handleChange, formInputData, handleSubmit }) {
       <div>
         <label>recipe-name </label>
         <input
+          type="text"
           onChange={handleChange}
           name="recipe-name"
           placeholder="recipe-name"
         />
       </div>
       <div>
-      <label>recipe-instructions </label>
+        <label>recipe-instructions </label>
         <input
+          type="text"
           onChange={handleChange}
           name="recipe-instructions"
           placeholder="recipe-instructions"
