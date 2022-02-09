@@ -3,7 +3,7 @@ function Form({ handleChange, formInputData, handleSubmit }) {
     <div>
       <div>
         <input
-          type="text"
+          type="textbox"
           onChange={handleChange}
           value={formInputData.recipeName}
           name="recipeName"
@@ -12,7 +12,7 @@ function Form({ handleChange, formInputData, handleSubmit }) {
       </div>
       <div>
         <input
-          type="text"
+          type="textbox"
           onChange={handleChange}
           value={formInputData.recipeInstructions}
           name="recipeInstructions"
