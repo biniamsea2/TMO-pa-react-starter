@@ -31,14 +31,13 @@ function DisplayForm() {
 
   return (
     <React.Fragment>
-      <div>
         <div>
           {inputData.map((data) => {
             return <li>{data["recipe-name"]}</li>;
           })}
         </div>
         <form>
-          <label for="recipe-name">recipe-name </label>
+          <label htmlFor="recipe-name">recipe-name </label>
           <input
             name="recipe-name"
             // value={formInputData["/recipe-name/i"]}
@@ -47,7 +46,7 @@ function DisplayForm() {
             placeholder="recipe-name"
           />
 
-          <label for="recipe-instructions">recipe-instructions </label>
+          <label htmlFor="recipe-instructions">recipe-instructions </label>
           <input
             type="text"
             onChange={handleChange}
@@ -61,7 +60,6 @@ function DisplayForm() {
             </button>
           </div>
         </form>
-      </div>
     </React.Fragment>
   );
 }
