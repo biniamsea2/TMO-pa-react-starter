@@ -7,7 +7,7 @@ function App() {
 
   const openForm = () => {
     setItOpen(true);
-  };
+  }; 
 
   return (
     <div>
