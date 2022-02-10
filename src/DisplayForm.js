@@ -31,35 +31,33 @@ function DisplayForm() {
 
   return (
     <React.Fragment>
-        <div>
-          {inputData.map((data) => {
-            return <li>{data["recipe-name"]}</li>;
-          })}
-        </div>
-        <form>
-          {/* <label htmlFor="recipe-name">recipe-name </label> */}
-          <input
-            name="recipe-name" 
-            // value={formInputData["/recipe-name/i"]}
-            type="textbox"
-            onChange={handleChange}
-            placeholder="recipe-name"
-          />
+      <div>
+        {inputData.map((data) => {
+          return <li>{data["recipe-name"]}</li>;
+        })}
+      </div>
+      <form>
+        {/* <label htmlFor="recipe-name">recipe-name </label> */}
+        <input
+          type="text"
+          name="recipe-name"
+          // value={formInputData["/recipe-name/i"]}
+          onChange={handleChange}
+          placeholder="recipe-name"
+        />
 
-          {/* <label htmlFor="recipe-instructions">recipe-instructions </label> */}
-          <input
-            type="textbox"
-            onChange={handleChange}
-            // value={formInputData["r/ecipe-instructions/i"]}
-            name="recipe-instructions"
-            placeholder="recipe-instructions"
-          />
-          <div>
-            <button type="submit" onClick={handleSubmit}>
-              Add
-            </button>
-          </div>
-        </form>
+        {/* <label htmlFor="recipe-instructions">recipe-instructions </label> */}
+        <input
+          type="text"
+          onChange={handleChange}
+          // value={formInputData["r/ecipe-instructions/i"]}
+          name="recipe-instructions"
+          placeholder="recipe-instructions"
+        />
+        <button type="submit" onClick={handleSubmit}>
+          Add
+        </button>
+      </form>
     </React.Fragment>
   );
 }
