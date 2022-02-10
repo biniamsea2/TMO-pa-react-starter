@@ -37,16 +37,16 @@ function DisplayForm() {
           })}
         </div>
         <form>
-          <label htmlFor="recipe-name">recipe-name </label>
+          {/* <label htmlFor="recipe-name">recipe-name </label> */}
           <input
-            name="recipe-name"
+            name="recipe-name" 
             // value={formInputData["/recipe-name/i"]}
             type="textbox"
             onChange={handleChange}
             placeholder="recipe-name"
           />
 
-          <label htmlFor="recipe-instructions">recipe-instructions </label>
+          {/* <label htmlFor="recipe-instructions">recipe-instructions </label> */}
           <input
             type="textbox"
             onChange={handleChange}
