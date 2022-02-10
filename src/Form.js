@@ -2,7 +2,7 @@ function Form({ handleChange, formInputData, handleSubmit }) {
   return (
     <form>
       <div>
-        <label>recipe-name </label>
+        <label for="recipe-name">recipe-name </label>
         <input
           name="recipe-name"
           value={formInputData["recipe-name"]}
@@ -12,7 +12,7 @@ function Form({ handleChange, formInputData, handleSubmit }) {
         />
       </div>
       <div>
-        <label>recipe-instructions </label>
+        <label for="recipe-instructions">recipe-instructions </label>
         <input
           type="text"
           onChange={handleChange}
