@@ -3,7 +3,6 @@ function Form({ handleChange, formInputData, handleSubmit }) {
     <form>
       <label for="recipe-name">recipe-name </label>
       <input
-        role="textbox"
         name="recipe-name"
         // value={formInputData["/recipe-name/i"]}
         type="text"
@@ -13,7 +12,6 @@ function Form({ handleChange, formInputData, handleSubmit }) {
 
       <label for="recipe-instructions">recipe-instructions </label>
       <input
-        role="textbox"
         type="text"
         onChange={handleChange}
         // value={formInputData["r/ecipe-instructions/i"]}
