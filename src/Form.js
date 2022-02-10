@@ -1,7 +1,6 @@
 function Form({ handleChange, formInputData, handleSubmit }) {
   return (
     <form>
-      <div>
         <label for="recipe-name">recipe-name </label>
         <input
           name="recipe-name"
@@ -10,8 +9,6 @@ function Form({ handleChange, formInputData, handleSubmit }) {
           onChange={handleChange}
           placeholder="recipe-name"
         />
-      </div>
-      <div>
         <label for="recipe-instructions">recipe-instructions </label>
         <input
           type="text"
@@ -20,7 +17,6 @@ function Form({ handleChange, formInputData, handleSubmit }) {
           name="recipe-instructions"
           placeholder="recipe-instructions"
         />
-      </div>
       <div>
         <button type="submit" onClick={handleSubmit}>
           Add
