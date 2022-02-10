@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 // import Form from "./Form";
-// import DisplayData from "./DisplayData";
 
 function DisplayForm() {
   const [inputData, setInputData] = useState([]);
@@ -31,60 +30,39 @@ function DisplayForm() {
   };
 
   return (
-    // <React.Fragment>
-    //   <div>
-    //     <div>
-    //       <div>
-    //         <DisplayData inputData={inputData} />
-    //         <Form
-    //           handleChange={handleChange}
-    //           formInputData={formInputData}
-    //           handleSubmit={handleSubmit}
-    //         />
-    //       </div>
-    //       <div></div>
-    //     </div>
-    //   </div>
-    // </React.Fragment>
-
-    <div>
+    <React.Fragment>
       <div>
         <div>
-          {/* <DisplayData inputData={inputData} />
-           */}
-          <div>
-            {inputData.map((data) => {
-              return <li>{data["recipe-name"]}</li>;
-            })}
-          </div>
-          <form>
-            <label for="recipe-name">recipe-name </label>
-            <input
-              name="recipe-name"
-              // value={formInputData["/recipe-name/i"]}
-              type="text"
-              onChange={handleChange}
-              placeholder="recipe-name"
-            />
-
-            <label for="recipe-instructions">recipe-instructions </label>
-            <input
-              type="text"
-              onChange={handleChange}
-              // value={formInputData["r/ecipe-instructions/i"]}
-              name="recipe-instructions"
-              placeholder="recipe-instructions"
-            />
-            <div>
-              <button type="submit" onClick={handleSubmit}>
-                Add
-              </button>
-            </div>
-          </form>
+          {inputData.map((data) => {
+            return <li>{data["recipe-name"]}</li>;
+          })}
         </div>
-        <div></div>
+        <form>
+          <label for="recipe-name">recipe-name </label>
+          <input
+            name="recipe-name"
+            // value={formInputData["/recipe-name/i"]}
+            type="text"
+            onChange={handleChange}
+            placeholder="recipe-name"
+          />
+
+          <label for="recipe-instructions">recipe-instructions </label>
+          <input
+            type="text"
+            onChange={handleChange}
+            // value={formInputData["r/ecipe-instructions/i"]}
+            name="recipe-instructions"
+            placeholder="recipe-instructions"
+          />
+          <div>
+            <button type="submit" onClick={handleSubmit}>
+              Add
+            </button>
+          </div>
+        </form>
       </div>
-    </div>
+    </React.Fragment>
   );
 }
 export default DisplayForm;
