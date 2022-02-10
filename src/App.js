@@ -19,7 +19,7 @@ function App() {
       ) : (
         <div>
           There are no recipes to list <br></br>
-          <button onClick={openForm}>add recipe</button>
+          <button onClick={openForm}>Add recipe</button>
         </div>
       )}
     </div>

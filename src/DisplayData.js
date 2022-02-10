@@ -1,12 +1,9 @@
 function DisplayData({ inputData }) {
   return (
     <div>
-      {inputData.map((data, index) => {
+      {inputData.map((data) => {
         return (
-          <li key={index}>
-            {data["recipe-name"]} 
-            {/* {data["recipe-instructions"]} */}
-          </li>
+            <li>{data["recipe-name"]}</li>
         );
       })}
     </div>
