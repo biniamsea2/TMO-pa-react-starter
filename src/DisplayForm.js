@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Form from "./Form";
-import DisplayData from "./DisplayData";
+// import Form from "./Form";
+// import DisplayData from "./DisplayData";
 
 function DisplayForm() {
   const [inputData, setInputData] = useState([]);
