@@ -41,14 +41,14 @@ function DisplayForm() {
           <input
             name="recipe-name"
             // value={formInputData["/recipe-name/i"]}
-            type="text"
+            type="textbox"
             onChange={handleChange}
             placeholder="recipe-name"
           />
 
           <label htmlFor="recipe-instructions">recipe-instructions </label>
           <input
-            type="text"
+            type="textbox"
             onChange={handleChange}
             // value={formInputData["r/ecipe-instructions/i"]}
             name="recipe-instructions"
