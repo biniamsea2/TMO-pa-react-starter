@@ -10,7 +10,7 @@ function App() {
   };
 
   return (
-    <div className="home">
+    <div>
       <h1 className="doNotRemoveMe">Hello world.</h1>
       {/* ^ Do not remove this element ^ */}
       <h1>My Recipes</h1>
