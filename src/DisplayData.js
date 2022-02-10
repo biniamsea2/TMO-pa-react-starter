@@ -4,7 +4,8 @@ function DisplayData({ inputData }) {
       {inputData.map((data, index) => {
         return (
           <li key={index}>
-            {data["recipe-name"]} {data["recipe-instructions"]}
+            {data["recipe-name"]} 
+            {/* {data["recipe-instructions"]} */}
           </li>
         );
       })}
