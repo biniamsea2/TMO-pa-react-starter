@@ -12,11 +12,6 @@ const FormNew = ({ setTodo }) => {
   return (
     <div>
       <form onSubmit={formHandling}>
-        {/* <label htmlFor="recipe-name">
-          <input id="recipe-name" type="text" name="recipe-name" />
-        </label> */}
-        {/* <label htmlFor="recipe-name">First name:</label> */}
-
         <input
           type="text"
           name="recipe-name"
