@@ -21,13 +21,13 @@ const FormNew = ({ setTodo }) => {
           type="text"
           name="recipe-name"
           label="recipe-name"
-          placeholder="recipe name"
+          placeholder="recipe-name"
         />
         <input
-          label="recipe-name"
+          label="recipe-instructions"
           type="text"
           name="recipe-instructions"
-          placeholder="recipe instructions"
+          placeholder="recipe-instructions"
         />
         <button type="submit">Submit</button>
       </form>
