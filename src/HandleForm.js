@@ -8,8 +8,8 @@ function AppNew() {
 
   return (
     <div>
-      <ListFormat todoList={todos} />
       <InputData setTodo={setTodos} />
+      <ListFormat todoList={todos} />
     </div>
   );
 }
