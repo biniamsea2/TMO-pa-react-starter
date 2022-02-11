@@ -18,8 +18,8 @@ function App() {
         <HandleForm />
       ) : (
         <div>
-          <p>There are no recipes to list</p>
           <button onClick={openForm}>Add recipe</button>
+          <p>There are no recipes to list</p>
         </div>
       )}
     </div>

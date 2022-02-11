@@ -4,9 +4,9 @@ const ListNew = ({ todoList }) => {
   const displayList = () => {
     return (
       <div>
-        {todoList.map((item) => {
+        {todoList.map((item, index) => {
           return (
-            <div>
+            <div key={index}>
               <li>{item.todo}</li>
             </div>
           );

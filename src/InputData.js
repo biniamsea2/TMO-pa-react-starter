@@ -12,16 +12,24 @@ const FormNew = ({ setTodo }) => {
   return (
     <div>
       <form onSubmit={formHandling}>
-        <input type="text" name="recipe name" placeholder="recipe name" />
-
-        {/* <input type="text" name="recipe-name" placeholder="recipe-name" /> */}
+        {/* <label htmlFor="recipe-name">
+          <input id="recipe-name" type="text" name="recipe-name" />
+        </label> */}
+        {/* <label htmlFor="recipe-name">First name:</label> */}
 
         <input
           type="text"
-          name="recipe instructions"
+          name="recipe-name"
+          label="recipe-name"
+          placeholder="recipe name"
+        />
+        <input
+          label="recipe-name"
+          type="text"
+          name="recipe-instructions"
           placeholder="recipe instructions"
         />
-        <button type="submit">Add</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
