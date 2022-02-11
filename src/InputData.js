@@ -14,14 +14,14 @@ const FormNew = ({ setTodo }) => {
       <form onSubmit={formHandling}>
         <input
           type="text"
-          name="recipe-name"
-          label="recipe-name"
+          name="recipe name"
+          label="recipe name"
           placeholder="recipe-name"
         />
         <input
-          label="recipe-instructions"
           type="text"
-          name="recipe-instructions"
+          name="recipe instructions"
+          label="recipe instructions"
           placeholder="recipe-instructions"
         />
         <button type="submit">Submit</button>
