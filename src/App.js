@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
-import AppNew from "./AppNew";
+import HandleForm from "./HandleForm";
 
 function App() {
   const [open, setItOpen] = useState(false);
@@ -15,10 +15,10 @@ function App() {
       {/* ^ Do not remove this element ^ */}
       <h1>My Recipes</h1>
       {open ? (
-        <AppNew />
+        <HandleForm />
       ) : (
         <div>
-          There are no recipes to list <br></br>
+          <p>There are no recipes to list</p>
           <button onClick={openForm}>Add recipe</button>
         </div>
       )}

@@ -12,8 +12,15 @@ const FormNew = ({ setTodo }) => {
   return (
     <div>
       <form onSubmit={formHandling}>
-        <input type="text" name="recipe-name" placeholder="recipe-name" />
-        <input type="text" name="recipe-instructions" placeholder="recipe-instructions" />
+        <input type="text" name="recipe name" placeholder="recipe name" />
+
+        {/* <input type="text" name="recipe-name" placeholder="recipe-name" /> */}
+
+        <input
+          type="text"
+          name="recipe instructions"
+          placeholder="recipe instructions"
+        />
         <button type="submit">Add</button>
       </form>
     </div>
