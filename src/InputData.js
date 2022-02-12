@@ -12,13 +12,13 @@ const FormNew = ({ setTodo }) => {
   return (
     <div>
       <form onSubmit={formHandling}>
-        <textarea
+        <input
           type="text"
           name="recipe-name"
           label="recipe-name"
           placeholder="recipe-name"
         />
-        <textarea
+        <input
           type="text"
           name="recipe-instructions"
           label="recipe-instructions"
