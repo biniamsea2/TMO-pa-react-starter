@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import ListFormat from "./ListFormat";
 import InputData from "./InputData";
 
-function AppNew() {
+function HandleForm() {
   const [todos, setTodos] = useState([]);
 
   return (
@@ -14,4 +14,4 @@ function AppNew() {
   );
 }
 
-export default AppNew;
+export default HandleForm;
